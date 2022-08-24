@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/product_img"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_img"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/robotoslabreg"
+            android:padding="4dp"
+            android:text="Chicken eggs"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_img"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_edit"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/picactions"
+                android:src="@drawable/ic_baseline_edit_24" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/picactions"
+                android:src="@drawable/ic_baseline_delete_forever_24" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_show"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/picactions"
+                android:src="@drawable/ic_baseline_remove_red_eye_24" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

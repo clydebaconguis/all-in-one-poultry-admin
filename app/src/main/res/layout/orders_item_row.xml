@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp"
+    android:elevation="0dp"
+    android:background="@color/white"
+    >
+        <RelativeLayout
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img"
+                android:src="@drawable/ic_baseline_confirmation_number_24"
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTransac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/img"
+                android:fontFamily="@font/robotoslabold"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Transaction No."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTransac"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/robotoslabold"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="For approval"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
